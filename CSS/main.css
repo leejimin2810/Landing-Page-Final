@@ -1,0 +1,99 @@
+body {
+    background-color: #cae3ff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrap {
+    width: 50%;
+    margin: 5px auto;
+
+    .pic {
+        width: 32.3%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .owl-carousel .owl-item img {
+        border-radius: 10px;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+    }
+
+    .owl-carousel .owl-item.active.center img {
+        opacity: 1;
+    }
+
+    .btn:hover{
+        opacity: 0.8;
+    }
+    .btn {
+        font-size: 1.25rem;
+        color: white;
+        background-color: #0d56a5;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 50px;
+        margin: 20px auto;
+        padding: 1%;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    .wrap {
+        .pic {
+            margin-top: 5px;
+            margin-bottom: 2.5px;
+        }
+
+        .owl-carousel .owl-item img {
+            border-radius: 2.5px;
+        }
+
+        .btn {
+            font-size: 0.5rem;
+            margin: 5px auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .wrap {
+        .pic {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .owl-carousel .owl-item img {
+            border-radius: 5px;
+        }
+
+        .btn {
+            font-size: 1rem;
+            margin: 10px auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+    .wrap {
+        .pic {
+            margin-top: 15px;
+            margin-bottom: 7.5px;
+        }
+
+        .owl-carousel .owl-item img {
+            border-radius: 7.5px;
+        }
+
+        .btn {
+            font-size: 1.1rem;
+            margin: 15px auto;
+        }
+    }
+}
